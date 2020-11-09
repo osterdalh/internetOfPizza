@@ -1,0 +1,21 @@
+.CurrentProcess {
+    border: 1px solid black;
+    position: relative;
+    padding: 15px 20px 15px 220px;
+    .Sidelist {
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 20px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}

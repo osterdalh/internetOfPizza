@@ -1,28 +1,29 @@
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar'
+import Sidebar from './components/Sidebar/Sidebar'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import Dough from './pages/Dough/Dough'
-
+import OverView from './pages/Overview/Overview'
+import Process from './pages/Process'
 
 
 function App() {
   return (
-    <div>
-      <Navbar></Navbar>
+    <Router>
+      <Sidebar></Sidebar>
+      <Switch>
+        <div className="pageContent">
 
 
-      <div class="tab-content" id="nav-tabContent">
-        <div class=" tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <Dough />
+          <Route exact path="/">
+            <OverView />
+          </Route>
+          <Route path="/process">
+            <Process />
+          </Route>
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div>
-
-
-
-    </div>
+      </Switch>
+    </Router>
   );
 }
 

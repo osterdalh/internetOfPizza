@@ -1,0 +1,25 @@
+.Infobox{
+    border: 1px solid black;
+    border-left: 10px solid gray;
+    padding: 10px;
+}
+
+.danger{
+    border-left-color: red;
+
+}
+.success{
+    border-left-color: green;
+
+}
+
+.fa-check-circle{
+    color: green;
+}
+.fa-exclamation-circle{
+    color: red;
+}
+
+.fa-arrow-circle-right{
+    color: gray;
+}
