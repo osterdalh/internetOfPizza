@@ -14,7 +14,7 @@ const Sidebar = () => {
             <div className="sidenav">
                 <Link to="/">Overview</Link>
                 <Link to="/process">In Process</Link>
-                <Link to="/statistics">Statistics</Link>
+                <Link to="/shaping">Shaping</Link>
                 <Link to="/analysis">Analysis</Link>
                 <hr />
                 <Link to="/history">Historic Data</Link>

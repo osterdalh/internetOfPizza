@@ -1,0 +1,21 @@
+.circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 8px solid gray;
+    position: relative;
+    margin: 0 auto;
+    .circleText{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: calc(50% - 10px);
+    }
+}   
+
+.success {
+    border-color: green;
+}
+.danger {
+    border-color: red;
+}

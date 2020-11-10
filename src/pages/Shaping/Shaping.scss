@@ -1,0 +1,29 @@
+.leftSide{
+    width: 200px;
+    border: 1px solid red;
+    .StagesDetails{
+        padding: 20px 10px;
+    }
+}
+
+.rightSide{
+    width: calc(100% - 200px);
+    border: 1px solid green;
+    float: right;
+    .ShapingDetails{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .fa-long-arrow-alt-right{
+        font-size: 40px;
+        color: gray;
+    }
+    
+}
+
+.secondaryStyle {
+    color: gray;
+}
+
+
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import './CurrentProcess.scss'
-import Infobox from '../InfoBox/Infobox'
+import Infobox from '../Infobox/Infobox'
 import SectionHeader from '../SectionHeader/SectionHeader'
 
 
@@ -27,16 +27,16 @@ const CurrentProcess = () => {
             Some Info
 
             <div className="infoboxContainer d-flex justify-content-around">
-                <Infobox title="Preparation" style="success">
+                <Infobox title="Preparation" type="success">
                     <p>Duration <span className="font-weight-bold">30 min</span></p>
                 </Infobox>
-                <Infobox title="Shaping" style="success">
+                <Infobox title="Shaping" type="success">
                     <p>Duration <span className="font-weight-bold">30 min</span></p>
                 </Infobox>
-                <Infobox title="Baking" style="danger">
+                <Infobox title="Baking" type="danger">
                     <p>Duration <span className="font-weight-bold">30 min</span></p>
                 </Infobox>
-                <Infobox title="Packing" style="">
+                <Infobox title="Packing" type="">
                     <p>Duration <span className="font-weight-bold">30 min</span></p>
                 </Infobox>
             </div>

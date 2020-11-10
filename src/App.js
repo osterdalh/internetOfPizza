@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import OverView from './pages/Overview/Overview'
 import Process from './pages/Process'
-
+import Shaping from './pages/Shaping/Shaping'
 
 function App() {
   return (
@@ -18,8 +18,14 @@ function App() {
           <Route exact path="/">
             <OverView />
           </Route>
-          <Route path="/process">
+          <Route exact path="/process">
             <Process />
+          </Route>
+          <Route path="/process/:id">
+            id details
+          </Route>
+          <Route path="/shaping">
+            <Shaping/>
           </Route>
         </div>
       </Switch>
