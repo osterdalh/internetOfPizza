@@ -1,24 +1,37 @@
+@import '../../Styles/Styles.scss';
+
+
 .Infobox{
-    border: 1px solid black;
-    border-left: 15px solid gray;
-    padding: 10px;
+    border-left: 25px solid gray;
+    padding: 10px 30px 10px 4px;
     min-width: 160px;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    position: relative;
+    .infoIcon{
+        position: absolute;
+        right: 10px;
+        i{
+            font-size: 14px;
+        }
+    }
 }
 
 .danger{
-    border-left-color: red;
+    border-left-color: $danger-color;
 
 }
 .success{
-    border-left-color: green;
+    border-left-color: $success-color;
 
 }
 
 .fa-check-circle{
-    color: green;
+    color: $success-color;
 }
 .fa-exclamation-circle{
-    color: red;
+    color:$danger-color;
 }
 
 .fa-arrow-circle-right{

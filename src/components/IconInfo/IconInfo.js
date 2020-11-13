@@ -20,11 +20,11 @@ const getIcon = (name, type) => {
     }
 }
 
-const IconInfo = ({icon, type, children}) => {
+const IconInfo = ({ icon, type, children }) => {
     return (
         <div className="IconInfo">
             <div className="text-center">
-            {getIcon(icon, type)}
+                {getIcon(icon, type)}
             </div>
             <div className="text-center">
                 {children}

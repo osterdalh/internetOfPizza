@@ -3,32 +3,37 @@ import './DetailedInfobox.scss'
 import CircleInfo from '../CircleInfo/CircleInfo'
 import IconInfo from '../IconInfo/IconInfo'
 
-const DetailedInfobox = () => {
+
+
+
+const DetailedInfobox = ({ name, circleText, sensors }) => {
     return (
         <div>
-            <h5>Portioning </h5>
             <div className="DetailedInfobox">
+                <h5>{name} </h5>
+
                 <CircleInfo type="success">
-                    <h6>GOOD</h6>
+                    <h6>{circleText}</h6>
                 </CircleInfo>
                 <div className="row pt-2">
-                    <div className="col-4 justify-content-center devider">
-                        <IconInfo icon="position" type="danger">
-                            <p className="m-0">Position</p>
-                        </IconInfo>
-                    </div>
+                    {
+                        sensors.map(sensor => {
+                            return (
+                                <div className="col-4 text-center justify-content-center devider">
+                                    <div className={`sensorValue ${sensor.type}`}>
+                                        {sensor.value}
 
-                    <div className="col-4 devider">
-                        <IconInfo icon="color" type="success">
-                            <p className="m-0">Color</p>
-                        </IconInfo>
-                    </div>
+                                    </div>
+                                    <div className="sensorName">
+                                        {sensor.type}
 
-                    <div className="col-4">
-                        <IconInfo icon="weight" type="success">
-                            <p className="m-0">Color</p>
-                        </IconInfo>
-                    </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
+
 
                 </div>
 

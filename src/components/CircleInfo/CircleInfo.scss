@@ -1,21 +1,24 @@
+
+@import '../../Styles/Styles.scss';
+
 .circle{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: 8px solid gray;
+    border: 6px solid gray;
     position: relative;
     margin: 0 auto;
     .circleText{
         position: absolute;
         text-align: center;
         width: 100%;
-        top: calc(50% - 10px);
+        top: calc(50% - 8px);
     }
 }   
 
 .success {
-    border-color: green;
+    border-color:$success-color;
 }
 .danger {
-    border-color: red;
+    border-color: $danger-color;
 }

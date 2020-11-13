@@ -21,11 +21,13 @@ function App() {
           <Route exact path="/process">
             <Process />
           </Route>
-          <Route path="/process/:id">
+          <Route exact path="/process/:id">
             id details
           </Route>
           <Route path="/shaping">
             <Shaping/>
+          </Route>
+          <Route path="/test">
           </Route>
         </div>
       </Switch>
