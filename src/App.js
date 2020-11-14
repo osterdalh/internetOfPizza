@@ -7,10 +7,12 @@ import OverView from './pages/Overview/Overview'
 import Process from './pages/Process'
 import Shaping from './pages/Shaping/Shaping'
 
-const baseUrl = 'internetOfPizza'
 
 function App() {
+  const baseUrl = '/internetOfPizza'
+
   return (
+    
     <Router>
       <Sidebar></Sidebar>
       <Switch>
