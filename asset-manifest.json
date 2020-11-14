@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/internetOfPizza/static/css/main.b95a49e9.chunk.css",
+    "main.js": "/internetOfPizza/static/js/main.a2f136fe.chunk.js",
+    "main.js.map": "/internetOfPizza/static/js/main.a2f136fe.chunk.js.map",
+    "runtime-main.js": "/internetOfPizza/static/js/runtime-main.1c5449b7.js",
+    "runtime-main.js.map": "/internetOfPizza/static/js/runtime-main.1c5449b7.js.map",
+    "static/js/2.06afdbd7.chunk.js": "/internetOfPizza/static/js/2.06afdbd7.chunk.js",
+    "static/js/2.06afdbd7.chunk.js.map": "/internetOfPizza/static/js/2.06afdbd7.chunk.js.map",
+    "index.html": "/internetOfPizza/index.html",
+    "static/css/main.b95a49e9.chunk.css.map": "/internetOfPizza/static/css/main.b95a49e9.chunk.css.map",
+    "static/js/2.06afdbd7.chunk.js.LICENSE.txt": "/internetOfPizza/static/js/2.06afdbd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c5449b7.js",
+    "static/js/2.06afdbd7.chunk.js",
+    "static/css/main.b95a49e9.chunk.css",
+    "static/js/main.a2f136fe.chunk.js"
+  ]
+}
