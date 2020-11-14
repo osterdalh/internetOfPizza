@@ -3,7 +3,7 @@
 .sidenav {
     
     height: 100%;
-    width: 200px;
+    width: 220px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -12,24 +12,30 @@
     padding-top: 20px;
     border-right: 1px solid rgba(0,0,0,.1);
   }
+  .linkContainer{
+    width: 110px;
+    margin: 0 auto 0 70px;
+  }
   
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 10px 0;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 16px;
+
     color: #818181;
     display: block;
   }
   
   .sidenav a:hover {
     color: black;
+    text-decoration: none;
   }
   .sidenav a:focus{
-    text-decoration: underline;
+    font-weight: 700;
     color: black;
-
-
   }
+
+
   .main {
     margin-left: 160px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
