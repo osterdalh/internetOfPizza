@@ -7,6 +7,8 @@ import OverView from './pages/Overview/Overview'
 import Process from './pages/Process'
 import Shaping from './pages/Shaping/Shaping'
 
+const baseUrl = 'internetOfPizza'
+
 function App() {
   return (
     <Router>
@@ -15,20 +17,17 @@ function App() {
         <div className="pageContent">
 
 
-          <Route exact path="/">
+          <Route exact path={`${baseUrl}/`}>
             <OverView />
           </Route>
-          <Route exact path="/process">
+          <Route exact path={`${baseUrl}/process`}>
             <Process />
           </Route>
-          <Route exact path="/process/:id">
-            id details
-          </Route>
-          <Route path="/shaping">
+
+          <Route path= {`${baseUrl}/shaping`}>
             <Shaping/>
           </Route>
-          <Route path="/test">
-          </Route>
+         
         </div>
       </Switch>
     </Router>
